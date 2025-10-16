@@ -9,3 +9,13 @@
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+@layer components {
+    .btn {
+        @apply px-2 py-1 rounded bg-slate-100
+    }
+
+    .btn-primary {
+        @apply bg-blue-600 text-blue-50
+    }
+}

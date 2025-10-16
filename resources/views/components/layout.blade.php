@@ -12,15 +12,15 @@
             <div class="flex items-center justify-between">
                 <h1 class="text-xl font-bold text-gray-800">Cours ESGI - Laravel</h1>
                 <ul class="flex space-x-6">
-                    <a href="/">
+                    <x-nav-link href="/" :active="Route::is('home')" blabla="hello">
                         Accueil
-                    </a>
-                    <a href="/about">
-                        À propos
-                    </a>
-                    <a href="/contact">
+                    </x-nav-link>
+                    <x-nav-link href="/about" :active="Route::is('about')">
+                        A propos
+                    </x-nav-link>
+                    <x-nav-link href="contact" :active="Route::is('contact')">
                         Contact
-                    </a>
+                    </x-nav-link>
                 </ul>
             </div>
         </nav>
